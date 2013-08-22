@@ -1,156 +1,162 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Quick authentification concept</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.flatly.min.css" rel="stylesheet" media="screen">
-    <style type="text/css">
-        .marketing .col-lg-4 p, .marketing .col-lg-4 h2{text-align:center;}
-        hr{padding-top:30px;padding-bottom:30px;}
-    </style>
-  </head>
-  <body>
-    <header>
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#intro">Quick Authentification</a>
-            </div>
-
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                
-                <p class="navbar-text">No code, no boolshit, just a theoretical concept to inspire</p>
     
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#problem">Problem</a></li>
-                    <li><a href="#concept">Concept</a></li>
-                    <li><a href="#security">Security</a></li>
-                    <li><a href="#forusers">For a user</a></li>
-                    <li><a href="#technically">Technically</a></li>
-                </ul>
-            
-            </div><!-- /.navbar-collapse -->
-        </nav>  
-    </header>
-      
-    <div class="jumbotron" id="intro">
-        <div class="container">
-            <br/><br/>
-            <h1>An authentification without sign in/up</h1>
-            <br/>
-            <p>This is a authentification concept initially created for a mobile application <sup>(<strong>Five Seconds</strong>, not available yet)</sup>.</p>
-            <p>This concept allows to keep user logic in an application (any kind) but remove the "sign up", "sign in" system for the user. More friendly for the user, simple to integrate in code and the same "user logic" in your app.</p>
-            <br/>
+    <head>
+        <title>Quick authentification concept</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.flatly.min.css" rel="stylesheet" media="screen">
+        <style type="text/css">
+            .marketing .col-lg-4 p, .marketing .col-lg-4 h2 {
+                text-align:center;
+            }
+            hr {
+                padding-top:30px;
+                padding-bottom:30px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#intro">Quick Authentification</a>
+                </div>
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <p class="navbar-text">No code, no boolshit, just a theoretical concept to inspire</p>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#problem">Problem</a>
+                        </li>
+                        <li>
+                            <a href="#concept">Concept</a>
+                        </li>
+                        <li>
+                            <a href="#security">Security</a>
+                        </li>
+                        <li>
+                            <a href="#forusers">For a user</a>
+                        </li>
+                        <li>
+                            <a href="#technically">Technically</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </header>
+        <div class="jumbotron" id="intro">
+            <div class="container">
+                <br/>
+                <br/>
+                <h1>An authentification without sign in/up</h1>
+                <br/>
+                <p>This is a authentification concept initially created for a mobile application
+                    <sup>(
+                        <strong>Five Seconds</strong>, not available yet)</sup>.</p>
+                <p>This concept allows to keep user logic in an application (any kind) but remove the "sign up", "sign in" system for the user. More friendly for the user, simple to integrate in code and the same "user logic" in your app.</p>
+                <br/>
+            </div>
         </div>
-    </div>
-      
-      <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <h2>Quick and easy for the user</h2>
-            <p>
-                Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
-            </p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <h2>Simple to integrate</h2>
-            <p>
-                Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
-            </p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <h2>The same "user logic"</h2>
-            <p>
-                Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
-            </p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <hr class="featurette-divider" id="problem">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">The problem. <span class="text-muted">in the classic auth concept.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <div class="container marketing">
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2>Quick and easy for the user</h2>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <h2>Simple to integrate</h2>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <h2>The same "user logic"</h2>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+            <hr class="featurette-divider" id="problem">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">The problem.
+                        <span class="text-muted">in the classic auth concept.</span>
+                    </h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive" src="http://fakeimg.pl/500x500/" alt="500x500">
+                </div>
+            </div>
+            <hr class="featurette-divider" id="concept">
+            <div class="row featurette">
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive" src="http://fakeimg.pl/500x500/" alt="500x500">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">The concept.</h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+            </div>
+            <hr class="featurette-divider" id="security">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Security.
+                        <span class="text-muted">same as before.</span>
+                    </h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive" src="http://fakeimg.pl/500x500/" alt="500x500">
+                </div>
+            </div>
+            <hr class="featurette-divider" id="forusers">
+            <div class="row featurette">
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive" src="http://fakeimg.pl/500x500/" alt="500x500">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">For users.
+                        <span class="text-muted">quick and easy.</span>
+                    </h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+            </div>
+            <hr class="featurette-divider" id="technically">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Technically.
+                        <span class="text-muted">easy to develop.</span>
+                    </h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive" src="http://fakeimg.pl/500x500/" alt="500x500">
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <!-- /END THE FEATURETTES -->
+            <!-- FOOTER -->
+            <footer>
+                <p class="pull-right">
+                    <a href="#intro">Back to top</a>
+                </p>
+                <p>Concept by
+                    <a href="http://williamagay.com/">William AGAY</a>. With the licence "you are free to use this idea, customize it but please, keep me in touch" !</p>
+            </footer>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="http://fakeimg.pl/500x500/" alt="500x500">
-        </div>
-      </div>
+        <script src="//code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/nav.js"></script>
+    </body>
 
-      <hr class="featurette-divider" id="concept">
-
-      <div class="row featurette">
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive" src="http://fakeimg.pl/500x500/" alt="500x500">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">The concept.</h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider" id="security">
-
-      <div class="row featurette"> 
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Security. <span class="text-muted">same as before.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-responsive" src="http://fakeimg.pl/500x500/" alt="500x500">
-        </div>
-      </div>
-          
-        <hr class="featurette-divider" id="forusers">
-
-      <div class="row featurette">
-          <div class="col-md-5">
-            <img class="featurette-image img-responsive" src="http://fakeimg.pl/500x500/" alt="500x500">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">For users. <span class="text-muted">quick and easy.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-      </div>
-          
-           <hr class="featurette-divider" id="technically">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Technically. <span class="text-muted">easy to develop.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive" src="http://fakeimg.pl/500x500/" alt="500x500">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#intro">Back to top</a></p>
-        <p>Concept by <a href="http://williamagay.com/">William AGAY</a>. With the licence "you are free to use this idea, customize it but please, keep me in touch" !</p>
-      </footer>
-
-    </div>
-
-    <script src="//code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/nav.js"></script>
-  </body>
 </html>

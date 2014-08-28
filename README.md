@@ -49,4 +49,4 @@ Technically, you can code this concept the same way you would do with a classic 
 
 ## Licence
 
-Concept by William AGAY. With the licence "you are free to use this idea, customize it but please, keep me in touch" !
+With the licence "you are free to use this idea, customize it but please, keep me in touch" !
